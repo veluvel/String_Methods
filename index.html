@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>String Methods</title>
+</head>
+<body>
+
+<script>
+
+	var a = "Im velmurugan";
+	var b = "Im a Software Developer";
+
+	// 1.charAt()
+	console.log(a.charAt(4));
+
+	// 2.charCodeAt()
+	console.log(a.charCodeAt(5));
+
+	// 3.concat()
+	console.log(a.concat(" " + b));
+
+	// 4.startsWith() & endsWith()
+	console.log(a.startsWith("im"));
+	console.log(a.startsWith("Im"));
+	console.log(b.endsWith("Developer"));
+	console.log(b.endsWith("Develop"));
+
+	// 5.fromCharcode()
+	console.log(String.fromCharCode(85));
+
+	// 6.includes()
+	console.log(a.includes("velmurugan")); //boolean
+
+	// 7.indexOf()
+	var same1 = "Your name is velmurugan,Your bloodgroup is o+";
+	console.log(same1.indexOf("Your")); //Index value
+
+	// 8.lastIndexof()
+	var val1 = "Im a Front end Developer, i became a full stack Developer"
+	console.log(val1.lastIndexOf("Developer")); //index value
+
+	// 9.match()
+	var mat = "DEVELOPER IS A Developer";
+	console.log(mat.match(/eveloper/g)); // g- small letter la array vaaga print aagum
+	console.log(mat.match(/eveloper/i)); // i- caps letter la array vaaga print aagum
+	console.log(mat.match(/eveloper/gi)); // gi- small and caps letter la array vaaga print aagum
+
+	// 10.repeat()
+	var rep = "Im a Employee Of Google";
+	console.log(rep.repeat(2));
+
+	// 11.replace()
+	var a1 = "HELLO IS A Hello";
+	console.log(a1.replace(/ello/g,"ELLO"));
+	console.log(a1.replace(/ELLO/g,"ello"));
+
+	// 12.search()
+	console.log(rep.search("Of"));  //index value find
+
+	// 13.slice()
+	console.log(rep.slice(5,13));
+
+	// 14.split()
+	console.log(rep.split(" ")); // seperate ah array la string ah print aagum
+
+	// 15.substr()
+	console.log(rep.substr(5,7)); // 5th index la start panni 7 counts print aagum
+
+	// 16.substring()
+	console.log(rep.substring(5,7)); // 5th index to 7th index
+
+	// 17.toUpperCase() & toLowercase()
+	var s4 = "im velmurugan "
+	var s5 = "IM FROM TIRUNELVELI"
+	var s6 = "         IM FROM TIRUNELVELI        "
+	console.log(s4.toUpperCase()); //convert uppercase
+	console.log(s5.toLowerCase()); //convert lowercase
+
+	// 18.toLocaleLowerCase()
+	console.log(s5.toLocaleLowerCase()); //convert lowercase
+	
+	// 19.toLocaleUpperCase()
+	console.log(s4.toLocaleUpperCase()); //convert upper case
+	
+	// 20.trim()
+	console.log(s6.trim()); //remove space 
+</script>
+</body>
+</html>
